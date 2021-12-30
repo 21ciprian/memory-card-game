@@ -51,6 +51,8 @@ const cardsArray = [
 ]
 //select DOM elements and store the vlues in variables
 const gameGrid = document.querySelector('.grid')
+const scoreDisplay = document.querySelector('#result')
+const message = document.querySelector('h3')
 //store the cards names of the card that was clicked
 let cardsChosen = []
 //store the cards ids of the card that was clicked
@@ -125,7 +127,12 @@ function checkForMatch() {
   //reset the cardsChosen and cardChosenId after every second card flip
   cardsChosen = []
   cardChosenId = []
-
+  //display score for every pair of matched card
+  scoreDisplay.innerText = cardsMatched.length
+  //check if there all the matching caards were found
+  if (cardsMatched.length === cardsArray.length / 2) {
+    message.innerText = 'Congrats, you found all the matching cards'
+  }
 }
 
 createBoardGame()
