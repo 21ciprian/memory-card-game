@@ -1,0 +1,25 @@
+{
+  "name": "memory-card-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/21ciprian/memory-card-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/21ciprian/memory-card-game/issues"
+  },
+  "homepage": "https://github.com/21ciprian/memory-card-game#readme",
+  "devDependencies": {
+    "cypress": "^9.2.0",
+    "jest": "^27.4.5"
+  }
+}
