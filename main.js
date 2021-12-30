@@ -49,3 +49,20 @@ const cardsArray = [
     img: 'images/pear.jpg'
   },
 ]
+//select DOM elements and store the vlues in variables
+const gameGrid = document.querySelector('.grid')
+
+
+//create board game
+function createBoardGame() {
+  cardsArray.map(function (item, i) {
+    const card = document.createElement('img')
+    card.setAttribute('src', 'images/qmark.png')
+    card.setAttribute('data-id', i)
+    card.classList.add('cardImage')
+    gameGrid.appendChild(card)
+  })
+}
+
+
+createBoardGame()
