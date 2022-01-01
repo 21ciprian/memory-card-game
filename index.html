@@ -5,11 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script async src="main.js"></script>
+  <script type="module" async src="main.js"></script>
   <title>Memory-card game | Vanilla Javascript</title>
 </head>
 <body>
-  <h3>Score: <span id="result"></span></h3>
+  <h1 id="title">Find the matching fruits :)</h1>
+  <section class="stats">
+    <h3>Score: <span id="result">0 </span></h3>
+    <h3>Time: <span id="timer">0mins 0secs</span></h3>
+  </section>
   <section class="grid"></section>
+  <button id="startGame">Restart Game</button>
+  <section id="modal" class="modal">
+    <section id="content">
+      <h2 id="close">X</h2>
+      <h2>WELL DONE FOR FINDING ALL THE MATCHING CARDS!!!</h2>
+      <h3 id="finalTime">Final Time: </h3>
+      <button id="playAgain">Play Again</button>
+
+    </section>
+  </section>
 </body>
 </html>
