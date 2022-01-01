@@ -122,7 +122,7 @@ export function checkForMatch() {
 }
 //show modal
 export function showModal() {
-  finalTime.innerHTML = `Final time: ${minutes}min ${seconds}sec`
+  finalTime.innerHTML = `Your Time: ${minutes}min ${seconds}sec`
   clearInterval(interval)
   modal.classList.remove('hide')
   modal.classList.add('show')
